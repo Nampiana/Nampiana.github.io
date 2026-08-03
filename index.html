@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio de RAKOTOARIMANANA Nampiana Fanamperana, ingénieur développement Full Stack spécialisé en Java, Spring Boot, React, Node.js, API REST et architectures MERN.">
+    <meta name="author" content="RAKOTOARIMANANA Nampiana Fanamperana">
+    <title>RAKOTOARIMANANA Nampiana Fanamperana | Ingénieur Développement Full Stack</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<style>
+    .skill-icon {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: #007bff;
+        font-size: 58px;
+        line-height: 1;
+    }
+
+    .experience-period {
+        margin-bottom: 12px;
+        color: #007bff;
+        font-weight: 600;
+    }
+
+    .technical-stack {
+        margin-top: 14px;
+        color: #333;
+        font-size: 0.94rem;
+    }
+
+    .project-stack {
+        margin-top: 12px;
+        font-weight: 600;
+        color: #555;
+    }
+</style>
+
+
+<style id="experience-cards-responsive">
+    /* ===== Expériences professionnelles : affichage responsive ===== */
+
+    #experience .container {
+        max-width: 1220px;
+    }
+
+    #experience .pricing-wrapper {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: stretch !important;
+        gap: 26px !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #experience .pricing-wrapper .pricing-card {
+        flex: 0 1 calc(33.333% - 18px) !important;
+        width: calc(33.333% - 18px) !important;
+        max-width: 370px !important;
+        min-width: 300px;
+        display: flex !important;
+        flex-direction: column;
+        margin: 0 !important;
+        overflow: hidden;
+        border: 1px solid #e3e9f2;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 10px 30px rgba(0, 78, 146, 0.09);
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+
+    #experience .pricing-wrapper .pricing-card:hover {
+        transform: translateY(-6px) !important;
+        box-shadow: 0 16px 38px rgba(0, 78, 146, 0.16);
+    }
+
+    #experience .pricing-card-header {
+        min-height: 118px;
+        padding: 18px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #0069d9, #0099ff);
+        transform: none !important;
+        animation: none !important;
+    }
+
+    #experience .pricing-card-icon {
+        width: 78px !important;
+        height: 78px !important;
+        padding: 8px;
+        object-fit: contain;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    #experience .pricing-card-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 22px !important;
+        text-align: left;
+    }
+
+    #experience .pricing-card-title {
+        margin: 0 !important;
+        color: #1f2937 !important;
+        font-size: 1.23rem !important;
+        font-weight: 750 !important;
+        line-height: 1.32 !important;
+        text-align: left !important;
+        overflow-wrap: break-word;
+        opacity: 1 !important;
+        animation: none !important;
+    }
+
+    #experience .experience-company {
+        margin: 5px 0 8px;
+        color: #006fd6;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #experience .experience-period {
+        margin: 0 0 15px;
+        color: #4b5563;
+        font-size: 0.92rem;
+        font-weight: 650;
+        line-height: 1.45;
+        text-align: left;
+    }
+
+    #experience .pricing-card-list {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #experience .pricing-card-list ul {
+        margin: 0;
+        padding-left: 1.18rem !important;
+        list-style: disc !important;
+    }
+
+    #experience .pricing-card-list li {
+        margin: 0 0 9px !important;
+        color: #4b5563 !important;
+        font-size: 0.94rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    #experience .pricing-card-list li::marker {
+        color: #007bff;
+    }
+
+    #experience .technical-stack {
+        margin-top: auto !important;
+        padding-top: 14px;
+        border-top: 1px solid #e6eaf0;
+        color: #374151;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    #experience .technical-stack strong {
+        color: #006fd6;
+    }
+
+    /* Deux cartes par ligne sur tablette */
+    @media (max-width: 991.98px) {
+        #experience .pricing-wrapper .pricing-card {
+            flex-basis: calc(50% - 13px) !important;
+            width: calc(50% - 13px) !important;
+            max-width: 470px !important;
+            min-width: 280px;
+        }
+    }
+
+    /* Une carte par ligne sur mobile */
+    @media (max-width: 767.98px) {
+        #experience .pricing-wrapper {
+            gap: 20px !important;
+        }
+
+        #experience .pricing-wrapper .pricing-card {
+            flex-basis: 100% !important;
+            width: 100% !important;
+            max-width: 580px !important;
+            min-width: 0;
+        }
+
+        #experience .pricing-card-body {
+            padding: 20px !important;
+        }
+
+        #experience .pricing-card-title {
+            font-size: 1.15rem !important;
+        }
+    }
+</style>
+
+
+<style id="skills-cards-spacing-fix">
+    /* ===== Correction des cartes de compétences ===== */
+
+    #competence .row {
+        align-items: stretch;
+    }
+
+    #competence .row > [class*="col-"] {
+        display: flex;
+    }
+
+    #competence .service-card {
+        width: 100% !important;
+        max-width: none !important;
+        min-height: 290px;
+        display: flex !important;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid #dbe4ee;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 10px 28px rgba(0, 123, 255, 0.10);
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+
+    #competence .service-card .body {
+        position: static !important;
+        inset: auto !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 290px;
+        padding: 30px 24px 26px !important;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    #competence .skill-icon {
+        position: static !important;
+        display: block !important;
+        margin: 0 0 24px !important;
+        color: #007bff;
+        font-size: 58px;
+        line-height: 1;
+        flex-shrink: 0;
+        transform: none !important;
+    }
+
+    #competence .service-card h6.title {
+        position: static !important;
+        width: 100%;
+        margin: 0 0 16px !important;
+        padding: 0 !important;
+        color: #2f2f2f;
+        font-size: 1.28rem !important;
+        font-weight: 700 !important;
+        line-height: 1.3 !important;
+        text-align: center;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    #competence .service-card p.subtitle {
+        position: static !important;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #6b7280 !important;
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        text-align: center;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    #competence .service-card:hover {
+        transform: translateY(-6px) !important;
+        box-shadow: 0 16px 34px rgba(0, 123, 255, 0.16);
+    }
+
+    @media (max-width: 767.98px) {
+        #competence .service-card,
+        #competence .service-card .body {
+            min-height: 250px;
+        }
+
+        #competence .service-card .body {
+            padding: 26px 20px 22px !important;
+        }
+
+        #competence .skill-icon {
+            margin-bottom: 18px !important;
+            font-size: 52px;
+        }
+
+        #competence .service-card h6.title {
+            margin-bottom: 12px !important;
+            font-size: 1.2rem !important;
+        }
+    }
+</style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Accueil</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#propos">À propos</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#competence">Compétences</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#formation">Formations</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#experience">Expériences</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#projet">Projets</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+<header id="home" class="header">
+    <div class="overlay"></div>
+    <div class="header-content container">
+        <h1 class="header-title">
+            <span class="up">Bonjour,</span>
+            <span class="down typing" data-text="Je suis Nampiana Fanamperana"></span>
+        </h1>
+        <p class="header-subtitle">Ingénieur Développement Full Stack</p>
+        <p>Java · Spring Boot · React · Node.js · API REST · MERN</p>
+        <a href="#projet" class="btn btn-primary">Voir mes réalisations</a>
+    </div>
+</header>
+
+    <!-- about section -->
+<section class="section pt-0" id="propos">
+    <div class="container text-center">
+        <div class="about">
+            <div class="about-img-holder">
+                <img src="assets/imgs/profil.jpg" class="about-img"
+                    alt="Portrait professionnel de RAKOTOARIMANANA Nampiana Fanamperana">
+            </div>
+            <div class="about-caption">
+                <p class="section-subtitle">Qui suis-je ?</p>
+                <h2 class="section-title mb-3">À propos de moi</h2>
+                <div class="about-content">
+                    <p>
+                        Développeur Full Stack spécialisé dans la conception d’applications web,
+                        de plateformes métiers et de solutions desktop. Je possède une solide
+                        expérience avec Java/Spring Boot et l’écosystème MERN, notamment dans
+                        le développement d’API REST, d’interfaces responsives et l’intégration
+                        de bases de données SQL et NoSQL.
+                    </p>
+                    <p>
+                        J’interviens sur l’ensemble du cycle de développement, de l’analyse des
+                        besoins à la mise en production, afin de concevoir des solutions robustes,
+                        évolutives et centrées sur les utilisateurs.
+                    </p>
+                    <p>
+                        Diplômé d’un Master II MBDS de l’Université Côte d’Azur, je dispose
+                        également de bases en Python, en langage R, en préparation et visualisation
+                        de données, ainsi que de notions de Machine Learning et de Big Data.
+                    </p>
+                </div>
+                <button class="btn-rounded btn btn-outline-primary mt-4" id="downloadButton">
+                    Télécharger mon CV
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- end of about section -->
+
+
+    <!-- service section -->
+<section class="section" id="competence">
+    <div class="container text-center">
+        <p class="section-subtitle">Mon environnement technique</p>
+        <h6 class="section-title mb-6">Mes compétences</h6>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <i class="ti-server skill-icon" aria-hidden="true"></i>
+                        <h6 class="title">Backend & API</h6>
+                        <p class="subtitle">
+                            Java, Java EE, Spring, Spring Boot, Web services,
+                            Node.js, Express.js, API REST, authentification et autorisation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <i class="ti-layout skill-icon" aria-hidden="true"></i>
+                        <h6 class="title">Frontend</h6>
+                        <p class="subtitle">
+                            JavaScript, Angular, AngularJS, React.js, Vue.js,
+                            HTML5, CSS3, Bootstrap et responsive design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <i class="ti-harddrives skill-icon" aria-hidden="true"></i>
+                        <h6 class="title">Bases de données</h6>
+                        <p class="subtitle">
+                            PostgreSQL, MySQL, Oracle, SQL Server, MongoDB
+                            et modélisation SQL/NoSQL.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <i class="ti-settings skill-icon" aria-hidden="true"></i>
+                        <h6 class="title">Architecture & outils</h6>
+                        <p class="subtitle">
+                            Architectures MERN/MEAN, Electron, Git, GitHub,
+                            GitLab, Docker, CI/CD, GitHub Actions et méthodes Agile.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <i class="ti-bar-chart-alt skill-icon" aria-hidden="true"></i>
+                        <h6 class="title">Data & IA</h6>
+                        <p class="subtitle">
+                            Python (bases), langage R, préparation et visualisation
+                            de données, notions de Machine Learning et de Big Data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- end of service section -->
+
+    <!-- portfolio section -->
+<section class="section" id="formation">
+    <div class="container text-center">
+        <p class="section-subtitle">Mon parcours académique</p>
+        <h6 class="section-title mb-6">Formations et diplômes</h6>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-card">
+                    <img src="assets/imgs/cote.jpg"
+                        class="portfolio-card-img" alt="Master II MBDS">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Master II en MBDS</h4>
+                            <p class="font-weight-normal">Université Côte d’Azur — Parcours Mobiquité, Big Data et Intégration de  systèmes (MBDS), Computer Engineering</p>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-card">
+                    <img src="assets/imgs/ITU.jpg"
+                        class="portfolio-card-img" alt="Master I">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Master I</h4>
+                            <p class="font-weight-normal">IT University — Computer Engineering. Approfondissement des concepts avancés en développement logiciel, architecture des systèmes, bases de données, intelligence artificielle et ingénierie des applications.</p>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-card">
+                    <img src="assets/imgs/ITU.jpg"
+                        class="portfolio-card-img" alt="Licence en développement web">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Licence en développement web</h4>
+                            <p class="font-weight-normal">IT University — Formation spécialisée en conception et développement d'applications web, programmation, bases de données, architectures web et génie logiciel.</p>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- end of portfolio section -->
+
+    <!-- pricing section -->
+<section class="section" id="experience">
+    <div class="container text-center">
+        <p class="section-subtitle">Mon parcours professionnel</p>
+        <h6 class="section-title mb-6">Expériences professionnelles</h6>
+        <div class="pricing-wrapper">
+
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="assets/imgs/BPO.png"
+                        alt="Projet Deal.mg">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Développeur Full Stack</h6>
+                        <p class="experience-company">BPO Concept</p>
+                    <p class="experience-period">2026 · Deal.mg</p>
+                    <div class="pricing-card-list">
+                        <ul>
+                            <li>Conception d’une architecture MERN pour la gestion des utilisateurs, profils, produits et annonces.</li>
+                            <li>Développement d’API REST, des opérations CRUD, de la validation des données et de la gestion des erreurs.</li>
+                            <li>Mise en place de l’authentification, des autorisations et du contrôle des accès.</li>
+                            <li>Développement d’une interface React responsive avec recherche, filtres et paiement.</li>
+                        </ul>
+                        <p class="technical-stack">
+                            <strong>Technologies :</strong> React.js, Node.js, Express.js, MongoDB, API REST.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon"
+                        src="assets/imgs/iga.jpg"
+                        alt="Mission Java freelance chez IGA">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Développeur Java Freelance</h6>
+                        <p class="experience-company">IGA</p>
+                    <p class="experience-period">Décembre 2025 à mai 2026 · Full remote</p>
+                    <div class="pricing-card-list">
+                        <ul>
+                            <li>Développement et évolution de fonctionnalités applicatives en Java.</li>
+                            <li>Analyse des besoins et implémentation des règles de gestion.</li>
+                            <li>Maintenance corrective, débogage et résolution des anomalies.</li>
+                            <li>Réalisation de tests fonctionnels et techniques.</li>
+                            <li>Collaboration à distance avec l’équipe projet.</li>
+                        </ul>
+                        <p class="technical-stack">
+                            <strong>Technologies :</strong> Java, programmation orientée objet, débogage et tests applicatifs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="assets/imgs/BPO.png"
+                        alt="Projet SpyTeam">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Développeur Full Stack JavaScript</h6>
+                        <p class="experience-company">BPO Concept</p>
+                    <p class="experience-period">2025 · SpyTeam</p>
+                    <div class="pricing-card-list">
+                        <ul>
+                            <li>Développement de modules web et desktop dédiés à la supervision des postes professionnels.</li>
+                            <li>Création de composants React et de services backend Node.js.</li>
+                            <li>Intégration d’une application Electron connectée à MongoDB.</li>
+                            <li>Centralisation et affichage des données de supervision.</li>
+                        </ul>
+                        <p class="technical-stack">
+                            <strong>Technologies :</strong> React.js, Node.js, Electron et MongoDB.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="assets/imgs/BPO.png"
+                        alt="Projet ChatSav">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Développeur Full Stack</h6>
+                        <p class="experience-company">BPO Concept</p>
+                    <p class="experience-period">2024 · ChatSav</p>
+                    <div class="pricing-card-list">
+                        <ul>
+                            <li>Développement du chat, de l’appel vidéo et de l’accès distant.</li>
+                            <li>Intégration des échanges frontend/backend en temps réel.</li>
+                            <li>Conception de parcours de diagnostic et de résolution d’incidents.</li>
+                        </ul>
+                        <p class="technical-stack">
+                            <strong>Technologies :</strong> React.js, Node.js et WebSocket.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="assets/imgs/imagessssss.jpg"
+                        alt="Espace pensionnaire CNaPS">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Développeur web</h6>
+                        <p class="experience-company">CNaPS</p>
+                    <p class="experience-period">2023 · Espace pensionnaire</p>
+                    <div class="pricing-card-list">
+                        <ul>
+                            <li>Développement de modules facilitant les démarches et la consultation des informations des pensionnaires.</li>
+                            <li>Création de services backend avec Java/Spring Boot et d’interfaces AngularJS.</li>
+                            <li>Intégration frontend/backend et participation aux tests fonctionnels.</li>
+                        </ul>
+                        <p class="technical-stack">
+                            <strong>Technologies :</strong> Java, Spring Boot, AngularJS et Oracle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- end of pricing section -->
+
+    <!-- section -->
+
+    <!-- testimonial section -->
+
+    <!-- blog section -->
+<section class="section" id="projet">
+    <div class="container text-center">
+        <p class="section-subtitle">Quelques solutions réalisées en contexte professionnel</p>
+        <h6 class="section-title mb-6">Projets professionnels</h6>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="assets/imgs/BPO.png" class="blog-card-img"
+                    alt="Deal.mg, marketplace et plateforme de petites annonces">
+            </div>
+            <div class="blog-card-body">
+                <h5 class="blog-card-title">Deal.mg — Marketplace et petites annonces</h5>
+                <p>
+                    Plateforme web permettant aux utilisateurs de gérer leur profil,
+                    publier des produits et des annonces, effectuer des recherches
+                    multicritères et utiliser des fonctionnalités de paiement.
+                </p>
+                <p class="project-stack">
+                    React.js · Node.js · Express.js · MongoDB · API REST
+                </p>
+                <a href="https://deal.mg/" target="_blank" rel="noopener noreferrer" class="btn-animated">
+                    Voir le projet <i class="ti-angle-double-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="assets/imgs/BPO.png" class="blog-card-img"
+                    alt="SpyTeam, solution de supervision informatique">
+            </div>
+            <div class="blog-card-body">
+                <h5 class="blog-card-title">SpyTeam — Solution de supervision informatique</h5>
+                <p>
+                    Solution web et desktop permettant de centraliser et d’afficher
+                    les données de supervision de l’activité numérique des postes professionnels.
+                </p>
+                <p class="project-stack">
+                    React.js · Node.js · Electron · MongoDB
+                </p>
+                <a href="https://app.spyteam.fr/" target="_blank" rel="noopener noreferrer" class="btn-animated">
+                    Voir le projet <i class="ti-angle-double-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="assets/imgs/BPO.png" class="blog-card-img"
+                    alt="ChatSav, plateforme de support informatique">
+            </div>
+            <div class="blog-card-body">
+                <h5 class="blog-card-title">ChatSav — Plateforme de support informatique</h5>
+                <p>
+                    Plateforme de support à distance intégrant la messagerie instantanée,
+                    l’appel vidéo, l’accès distant et des parcours de diagnostic
+                    et de résolution d’incidents.
+                </p>
+                <p class="project-stack">
+                    React.js · Node.js · WebSocket · communication en temps réel
+                </p>
+                <a href="https://app.chatsav.com/" target="_blank" rel="noopener noreferrer" class="btn-animated">
+                    Voir le projet <i class="ti-angle-double-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="assets/imgs/imagessssss.jpg" class="blog-card-img"
+                    alt="Espace pensionnaire de la CNaPS">
+            </div>
+            <div class="blog-card-body">
+                <h5 class="blog-card-title">CNaPS — Espace pensionnaire</h5>
+                <p>
+                    Application destinée à simplifier les démarches des pensionnaires
+                    et à faciliter la consultation de leurs informations depuis une interface web.
+                </p>
+                <p class="project-stack">
+                    Java · Spring Boot · AngularJS · Oracle
+                </p>
+                <a href="https://espace.cnaps.mg/security/login" target="_blank"
+                    rel="noopener noreferrer" class="btn-animated">
+                    Voir le projet <i class="ti-angle-double-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <!-- end of blog section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">Une opportunité, une mission ou un projet ?</p>
+            <h6 class="section-title mb-5">Me contacter</h6>
+
+            <!-- contact form -->
+            <form id="contact-form" class="contact-form col-md-10 col-lg-8 m-auto" data-aos="fade-up">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" id="to_name" class="form-control" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" id="from_name" class="form-control" placeholder="Votre adresse e-mail" required>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea id="message" rows="6" class="form-control" placeholder="Votre message"
+                            required></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <button type="submit" class="btn-custom">Envoyer le message</button>
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+            <p id="status-message"></p>
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">Nampiana</a> Fanamperana
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://www.facebook.com/profile.php?id=100008196287843" class="link"><i
+                        class="ti-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/nampiana-fanamperana-rakotoarimanana-716314267/" target="_blank"
+                    class="link">
+                    <i class="ti-linkedin"></i>
+                </a>
+                <a href="https://join.skype.com/invite/KcrvoOsgOlY3" class="link">
+                    <i class="ti-skype"></i>
+                </a>
+                <a href="https://github.com/Nampiana" target="_blank" class="link">
+                    <i class="ti-github"></i>
+                </a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+    <!-- script Download cv -->
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function () {
+            const link = document.createElement('a');
+            link.href = 'assets/cv/CV.pdf'; // Remplace par le chemin réel de ton fichier
+            link.download = 'CV_RAKOTOARIMANANA_Nampiana_Fanamperana.pdf'; // Nom du fichier téléchargé
+            link.click();
+        });
+    </script>
+
+    <!-- script envoie mail  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("ATVofTpqwPTq3Htgi"); // Remplace par ta clé publique EmailJS
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Récupération des valeurs du formulaire
+            let templateParams = {
+                to_name: document.getElementById("to_name").value,
+                from_name: document.getElementById("from_name").value,
+                message: document.getElementById("message").value,
+            };
+
+            // Envoi du mail via EmailJS
+            emailjs.send("service_i8clj0j", "template_owlgnma", templateParams)
+                .then(function (response) {
+                    console.log("SUCCESS!", response.status, response.text);
+                    document.getElementById("status-message").innerHTML =
+                        "<div class='alert alert-success'>Message envoyé avec succès !</div>";
+                    document.getElementById("contact-form").reset();
+                }, function (error) {
+                    console.log("FAILED...", error);
+                    document.getElementById("status-message").innerHTML =
+                        "<div class='alert alert-danger'>Erreur lors de l'envoi du message.</div>";
+                });
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+    <!-- scrip header  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let title = document.querySelector(".typing");
+            let text = title.dataset.text;
+            let index = 0;
+
+            title.innerHTML = ""; // Empêche un texte résiduel d'apparaître
+
+            function typeWriter() {
+                if (index < text.length) {
+                    title.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 100); // Ajuste la vitesse ici
+                } else {
+                    title.style.borderRight = "none"; // Retire le curseur après la fin
+                }
+            }
+
+            typeWriter();
+        });
+
+    </script>
+
+    <!-- css header  -->
+    <style>
+        .header {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(120deg, #000428, #004e92);
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Animation de fondu et de montée */
+        .header-title {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInUp 1.5s ease-out forwards 0.5s;
+        }
+
+        .header-subtitle {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeInUp 1.5s ease-out forwards 1s;
+        }
+
+        .btn {
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInScale 1.5s ease-out forwards 1.5s;
+        }
+
+        /* Background overlay animation */
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            animation: fadeOverlay 2s ease-in-out;
+        }
+
+        /* Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeOverlay {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .header-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .typing {
+            display: inline-block;
+            min-width: fit-content;
+            border-right: 2px solid white;
+            /* Curseur */
+            white-space: nowrap;
+            overflow: hidden;
+            font-weight: bold;
+            font-size: 1.5em;
+            animation: blink 0.7s infinite;
+            text-align: center;
+            /* Assure un bon alignement */
+        }
+    </style>
+
+    <style>
+        #about {
+            padding-top: 0;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-img-holder {
+            max-width: 300px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-img:hover {
+            transform: scale(1.05);
+        }
+
+        .about-caption {
+            max-width: 600px;
+            text-align: left;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+
+        .section-subtitle {
+            font-size: 1.2em;
+            color: #007bff;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeInUp 1s ease-out 0.7s forwards;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: #007bff;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-out;
+        }
+
+        .section-title:hover::after {
+            transform: scaleX(1);
+        }
+
+        .about-content {
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeInUp 1s ease-out 1s forwards;
+        }
+
+        #downloadButton {
+            transition: all 0.3s ease-in-out;
+        }
+
+        #downloadButton:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.2);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <style>
+        #pricing {
+            padding-top: 50px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: #007bff;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-out;
+        }
+
+        .section-title:hover::after {
+            transform: scaleX(1);
+        }
+
+        .pricing-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .pricing-card {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.3s;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 15px;
+            background-color: #fff;
+            overflow: hidden;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 123, 255, 0.2);
+        }
+
+        .pricing-card-header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: #fff;
+            transform: translateY(-100px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .pricing-card-icon {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .pricing-card-header:hover .pricing-card-icon {
+            transform: scale(1.1);
+        }
+
+        .pricing-card-body {
+            padding: 20px;
+        }
+
+        .pricing-card-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            opacity: 0;
+            animation: fadeInText 1s ease-out forwards;
+        }
+
+        .pricing-card-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pricing-card-list li {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .pricing-card-list li strong {
+            color: #007bff;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <style>
+        #service {
+            padding-top: 50px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: #007bff;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-out;
+        }
+
+        .section-title:hover::after {
+            transform: scaleX(1);
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .service-card {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.3s;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 15px;
+            background-color: #fff;
+            overflow: hidden;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 123, 255, 0.2);
+        }
+
+        .service-card .body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-card img.icon {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card:hover img.icon {
+            transform: scale(1.1);
+        }
+
+        .service-card h6.title {
+            font-size: 1.4em;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .service-card p.subtitle {
+            font-size: 1em;
+            color: #555;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.to(".about", {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                ease: "power3.out"
+            });
+
+            gsap.from(".about-img", {
+                opacity: 0,
+                scale: 0.8,
+                duration: 1,
+                delay: 0.3,
+                ease: "power2.out"
+            });
+
+            gsap.from(".about-caption p, .about-caption h2, #downloadButton", {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                delay: 0.5,
+                stagger: 0.2,
+                ease: "power2.out"
+            });
+        });
+    </script>
+
+    <style>
+        .blog-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-card-header {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-card-img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .blog-card:hover .blog-card-img {
+            transform: scale(1.1);
+        }
+
+        .blog-card-body {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .blog-card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .btn-primary {
+            background: #007bff;
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <style>
+        .btn-animated {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            background: linear-gradient(45deg, #007bff, #00d4ff);
+            color: white;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-animated i {
+            margin-left: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .btn-animated:hover {
+            background: linear-gradient(45deg, #0056b3, #0094ff);
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-animated:hover i {
+            transform: translateX(5px);
+        }
+    </style>
+
+    <style>
+        /* Style du formulaire */
+        .contact-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contact-form:hover {
+            transform: scale(1.02);
+        }
+
+        /* Style des champs */
+        .contact-form .form-control {
+            border-radius: 5px;
+            border: 2px solid #ddd;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-form .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+        }
+
+        /* Bouton personnalisé */
+        .btn-custom {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #6610f2, #007bff);
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        /* Animation d'entrée */
+        [data-aos] {
+            opacity: 0;
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        [data-aos].aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+
+</body>
+
+</html>
