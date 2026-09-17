@@ -336,6 +336,218 @@
     }
 </style>
 
+
+<!-- Mobile responsive fixes -->
+<style>
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    overflow: hidden;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 100%;
+}
+
+.header-title {
+    overflow-wrap: break-word;
+}
+
+.about,
+.pricing-wrapper {
+    max-width: 100%;
+}
+
+.blog-card,
+.service-card,
+.pricing-card {
+    min-width: 0;
+}
+
+.contact-form {
+    max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .custom-navbar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav {
+        max-width: 100%;
+    }
+
+    .nav .logo {
+        max-width: 55%;
+    }
+
+    .header {
+        min-height: 100svh;
+        height: auto;
+        padding: 100px 20px 60px;
+    }
+
+    .header-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .header-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 2rem !important;
+        line-height: 1.25;
+    }
+
+    .header-title .typing {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0 !important;
+        white-space: normal !important;
+        overflow: visible !important;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+        font-size: 1.3rem !important;
+        line-height: 1.4;
+    }
+
+    .header-subtitle,
+    .header-stack {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .about {
+        flex-direction: column !important;
+        gap: 30px !important;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-img-holder {
+        width: 100%;
+        max-width: 240px !important;
+        margin: 0 auto;
+    }
+
+    .about-caption {
+        width: 100%;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    .about-caption p {
+        overflow-wrap: break-word;
+    }
+
+    #competence .row,
+    #formation .row {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #competence .row > [class*="col-"],
+    #formation .row > [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #experience .pricing-wrapper {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 20px !important;
+    }
+
+    #experience .pricing-wrapper .pricing-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        flex: 0 0 100% !important;
+    }
+
+    #projets .blog-card,
+    #projects .blog-card {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-form {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 20px 15px !important;
+    }
+
+    .contact-form .form-control {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn-custom {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        overflow: hidden;
+    }
+
+    footer .social-links {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-title {
+        font-size: 1.7rem !important;
+    }
+
+    .header-title .typing {
+        font-size: 1.15rem !important;
+    }
+
+    .header-content {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .about-img-holder {
+        max-width: 210px !important;
+    }
+}
+</style>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
